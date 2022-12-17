@@ -6,6 +6,9 @@ module.exports = {
         "./app/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        fontFamily: {
+            Source: ["Source Code Pro", "monospace"],
+        },
         extend: {},
     },
     plugins: [],
