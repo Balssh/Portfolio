@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
         <div className="col-span-12 py-5 text-center bg-white lg:col-span-3 rounded-2xl">
             <img
-                src="https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/279400000_5325516427516017_4355978319386747439_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_tnbiEd5P6IAX9ThsN2&_nc_ht=scontent-otp1-1.xx&oh=00_AfDxQoZAulL6ncPDww8wQZUo0MEtVE6DewiyciGgNSZ1Fw&oe=63A28D2F"
+                src="https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-6/279400000_5325516427516017_4355978319386747439_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0P8NdW6UfaUAX9Oz446&_nc_ht=scontent.fomr1-1.fna&oh=00_AfB5Stq4izyWwQgTdoJP0lmnA0CI1C23-wgXKRlImgYsbA&oe=63AE6AAF"
                 alt="avatar"
                 className="w-32 h-32 mx-auto border rounded-full"
             />
