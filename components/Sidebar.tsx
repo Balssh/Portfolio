@@ -1,9 +1,17 @@
+import { useTheme } from "next-themes";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
 const Sidebar = () => {
+    const { theme, setTheme } = useTheme();
+
+    const changeTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark");
+        console.log(theme);
+    };
+
     return (
-        <div className="col-span-12 py-5 text-center bg-white lg:col-span-3 rounded-2xl">
+        <div className="col-span-12 py-5 text-center lg:col-span-3 rounded-2xl">
             <img
                 src="https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-6/279400000_5325516427516017_4355978319386747439_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0P8NdW6UfaUAX9Oz446&_nc_ht=scontent.fomr1-1.fna&oh=00_AfB5Stq4izyWwQgTdoJP0lmnA0CI1C23-wgXKRlImgYsbA&oe=63AE6AAF"
                 alt="avatar"
@@ -51,7 +59,10 @@ const Sidebar = () => {
             >
                 Email me
             </button>
-            <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-tr from-green-400 to-blue-400 focus:outline-none">
+            <button
+                className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-tr from-green-400 to-blue-400 focus:outline-none"
+                onClick={changeTheme}
+            >
                 Toggle theme
             </button>
         </div>

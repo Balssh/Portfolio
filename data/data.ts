@@ -1,9 +1,16 @@
 import { AiOutlineApi } from "react-icons/ai";
-import { DiReact } from "react-icons/di";
+import {
+    DiDocker,
+    DiGit,
+    DiJenkins,
+    DiLinux,
+    DiPython,
+    DiReact,
+} from "react-icons/di";
 import { FaServer } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
-import { SiCodersrank } from "react-icons/si";
-import { iService } from "../interfaces/type";
+import { SiCodersrank, SiCplusplus, SiPytorch } from "react-icons/si";
+import { iService, iSkill } from "../interfaces/type";
 
 export const services: iService[] = [
     {
@@ -33,5 +40,51 @@ export const services: iService[] = [
         title: "API Development",
         description: "I can develop robust REST API using <b>Node API</b> ",
         Icon: AiOutlineApi,
+    },
+];
+
+export const stack: iSkill[] = [
+    {
+        name: "React",
+        level: "30%",
+        Icon: DiReact,
+    },
+    {
+        name: "Python",
+        level: "70%",
+        Icon: DiPython,
+    },
+    {
+        name: "C++",
+        level: "30%",
+        Icon: SiCplusplus,
+    },
+    {
+        name: "Pytorch",
+        level: "30%",
+        Icon: SiPytorch,
+    },
+];
+
+export const tools: iSkill[] = [
+    {
+        name: "Docker",
+        level: "40%",
+        Icon: DiDocker,
+    },
+    {
+        name: "Git",
+        level: "60%",
+        Icon: DiGit,
+    },
+    {
+        name: "Jenkins",
+        level: "70%",
+        Icon: DiJenkins,
+    },
+    {
+        name: "Linux",
+        level: "70%",
+        Icon: DiLinux,
     },
 ];

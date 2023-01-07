@@ -4,3 +4,9 @@ export interface iService {
     description: string;
     Icon: IconType;
 }
+
+export interface iSkill {
+    name: string;
+    level: string;
+    Icon: IconType;
+}
